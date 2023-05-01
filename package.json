@@ -12,7 +12,7 @@
     "scripts": {
         "start": "tsdx watch",
         "build-tailwind": "npx tailwindcss -i ./tailwind.css -o ./dist/react-sidebar.css --minify",
-        "build": "tsdx build && npm run build-tailwind",
+        "build": "tsdx build --name rs && npm run build-tailwind",
         "test": "tsdx test --passWithNoTests",
         "lint": "tsdx lint",
         "prepare": "npm run build",
