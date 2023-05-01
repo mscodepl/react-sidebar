@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes, NavLink } from 'react-router-dom';
 import { Meta } from '@storybook/react';
-import { SidebarWrapper, PageWrapper, createReactNavLink } from '../src';
+import { SidebarWrapper, PageWrapper, createReactNavLink } from '../../mscode_dashboardV2/src/components/layout/common/react-sidebar/src';
 import { FiBox, FiActivity, FiAirplay, FiAperture, FiBookOpen, FiCast, FiClipboard, FiCodepen } from "react-icons/fi";
 
 const meta: Meta = {

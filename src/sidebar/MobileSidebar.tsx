@@ -4,10 +4,11 @@ import Footer from './Footer'
 import LeftOffCanvas from './LeftOffCanvas'
 import Navs from './Navs'
 import { SideBarContext } from './SidebarWrapper'
+import Gravatar from 'react-gravatar';
 
 export default function MobileSidebar() {
     const [show, setShow] = useState(false)
-    const { title, logoUrl, userImageUrl, onProfileImgClick, onLogoClick, mobileHeaderContent } = useContext(SideBarContext)
+    const { title, logoUrl, userEmail, onProfileImgClick, onLogoClick, mobileHeaderContent } = useContext(SideBarContext)
 
     return (
         <>
@@ -21,7 +22,7 @@ export default function MobileSidebar() {
                         {mobileHeaderContent}
                     </>}
                     <div className='rs-w-9 rs-h-9 rs-cursor-pointer rs-flex rs-items-center' onClick={onProfileImgClick}>
-                        <img src={userImageUrl} className="rs-rounded-full rs-shadow rs-w-8 rs-h-8 rs-overflow-hidden rs-object-cover" alt="" />
+                        <Gravatar email={userEmail} size={100} rating="pg" className="rs-rounded-full rs-shadow rs-w-8 rs-h-8 rs-overflow-hidden rs-object-cover" />
                     </div>
                 </div>
 

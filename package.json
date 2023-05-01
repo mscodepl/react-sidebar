@@ -1,6 +1,5 @@
 {
     "version": "4.11.0",
-    "license": "MIT",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
     "files": [
@@ -28,6 +27,7 @@
         "react-icons": ">=4"
     },
     "dependencies": {
+        "react-gravatar": "^2.6.3",
         "react-icons": ">=4"
     },
     "husky": {
@@ -41,11 +41,10 @@
         "singleQuote": true,
         "trailingComma": "es5"
     },
-    "name": "@milon27/react-sidebar",
     "author": {
-        "name": "milon27",
-        "email": "immilon27@gmail.com",
-        "url": "https://milon27.com"
+        "name": "MsCode",
+        "email": "mateusz@mscode.pl",
+        "url": "https://mscode.pl"
     },
     "keywords": [
         "typescript",
@@ -58,7 +57,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/milon27/react-sidebar"
+        "url": "https://github.com/mscodepl/react-sidebar"
     },
     "module": "dist/react-sidebar.esm.js",
     "size-limit": [
@@ -82,6 +81,7 @@
         "@storybook/react": "6.4.19",
         "@types/react": "17.0.43",
         "@types/react-dom": "17.0.14",
+        "@types/react-gravatar": "^2.6.10",
         "autoprefixer": "10.4.4",
         "babel-loader": "8.2.4",
         "husky": "7.0.4",

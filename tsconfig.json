@@ -1,7 +1,7 @@
 {
   // see https://www.typescriptlang.org/tsconfig to better understand tsconfigs
   "include": [
-    "src",
+    "../mscode_dashboardV2/src/components/layout/common/react-sidebar/src",
     "types"
   ],
   "compilerOptions": {
