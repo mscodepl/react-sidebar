@@ -5,7 +5,7 @@ compitable with react js and next js.
 ## Installation Commands
 
 ```bash
-npm install react-icons @milon27/react-sidebar
+npm install react-icons mscodepl-react-sidebar
 ```
 
 ### How to use
@@ -13,7 +13,7 @@ npm install react-icons @milon27/react-sidebar
 1. import css in index.js/ts or app.jsx or app.tsx.
 
 ```ts
-import '@milon27/react-sidebar/dist/react-sidebar.css';
+import 'mscodepl-react-sidebar/react-sidebar/dist/react-sidebar.css';
 ```
 2. use the component 
 
@@ -22,7 +22,7 @@ import '@milon27/react-sidebar/dist/react-sidebar.css';
 ```tsx
 import { FiBox, FiActivity, FiAirplay, FiAperture } from "react-icons/fi";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { SidebarWrapper, PageWrapper, createReactNavLink } from '@milon27/react-sidebar';
+import { SidebarWrapper, PageWrapper, createReactNavLink } from 'mscodepl-react-sidebar';
 
 const App=()=>{
   const navItems: (() => JSX.Element)[] = [
@@ -46,9 +46,9 @@ const App=()=>{
 
   return <>
       <SidebarWrapper
-          logoUrl='https://messmanager.app/img/logo/logo.webp'
-          userName='Milon27'
-          userImageUrl='https://avatars.githubusercontent.com/u/44096479?v=4'
+          logoUrl='https://mscode.pl/assets/img/Sygnet%20Niebieski.png'
+          userName='MsCode'
+          userEmail='example@gmail.com' // user email for gravatar
           navItems={navItems}
           activeStyle="outline" //fill , outline
           onLogOut={() => { }}
@@ -81,8 +81,8 @@ const App=()=>{
 ```tsx
 
 // _App.js file
-import '@milon27/react-sidebar/dist/react-sidebar.css'
-import { SidebarWrapper, createNextNavLink } from '@milon27/react-sidebar'
+import 'mscodepl-react-sidebar/dist/react-sidebar.css'
+import { SidebarWrapper, createNextNavLink } from 'mscodepl-react-sidebar'
 import { FiBox, FiAperture } from 'react-icons/fi'
 import NextLink from 'next/link'
 
@@ -105,9 +105,9 @@ function MyApp({ Component, pageProps }) {
   ]
 
   return <SidebarWrapper
-    logoUrl='https://messmanager.app/img/logo/logo.webp'
-    userName='Milon27'
-    userImageUrl='https://avatars.githubusercontent.com/u/44096479?v=4'
+    logoUrl='https://mscode.pl/assets/img/Sygnet%20Niebieski.png'
+    userName='MsCode'
+    userEmail='example@gmail.com' // user email for gravatar
     navItems={navItems}
     activeStyle="outline" //fill , outline
     onLogOut={() => { }}
@@ -126,7 +126,7 @@ export default MyApp
 
 ```jsx
 // page/about.js
-import { PageWrapper } from '@milon27/react-sidebar'
+import { PageWrapper } from 'mscodepl-react-sidebar'
 import React from 'react'
 
 export default function about() {
@@ -145,3 +145,5 @@ export default function about() {
 ![screenshot](desktop2.png)
 ![screenshot](mobile1.png)
 ![screenshot](mobile2.png)
+
+**THIS IS FORK OF @milon27/react-sidebar**

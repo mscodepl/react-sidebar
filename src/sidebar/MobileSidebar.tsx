@@ -12,7 +12,7 @@ export default function MobileSidebar() {
 
     return (
         <>
-            <div className='rs-flex sm:rs-hidden rs-px-5 rs-py-2  rs-shadow'>
+            <div className='rs-flex sm:rs-hidden rs-px-5 rs-py-2 rs-bg-white rs-shadow'>
                 <div className="rs-flex rs-w-full rs-gap-2 rs-justify-start rs-items-center">
                     <CgMenuLeft className='rs-text-3xl rs-cursor-pointer' onClick={() => setShow(true)} />
                     <img src={logoUrl} className="rs-w-9 rs-h-9 rs-max-w-full rs-rounded-full rs-cursor-pointer" alt="" onClick={onLogoClick} />
